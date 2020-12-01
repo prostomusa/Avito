@@ -6,7 +6,7 @@ from rest_framework import generics
 from django.http import JsonResponse, HttpRequest
 from .serializer import QuerySerializer, GetSerializer
 from .regions import REGION_LIST
-from Avito.celery import app, CELERYBEAT_SCHEDULE
+from Avito.celery import app
 from .models import *
 from .get_time import gettime
 from .tasks import counter

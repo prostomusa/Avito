@@ -10,10 +10,9 @@ app = Celery('Avito')
 
 app.config_from_object('django.conf:settings', namespace='CELERY')
 app.autodiscover_tasks()
-CELERYBEAT_SCHEDULE = dict()
 app.conf.beat_schedule = {
 	'T1': {
 		'task': 'request.tasks.counter',
-		'schedule': crontab(hour='*/1'),
+		'schedule': crontab(minute=0, hour='*/1'),
 	},
 }
