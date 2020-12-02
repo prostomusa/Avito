@@ -3,7 +3,11 @@ JSON API сервис сделан на фреймворке Django и Django-RE
 Команды для запуска Docker:
 
 > git clone https://github.com/prostomusa/Avito.git
+
 > cd Avito
+
 > docker-compose run web python manage.py makemigrations
+
 > docker-compose run web python manage.py migrate
+
 > docker-compose up
