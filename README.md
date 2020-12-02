@@ -13,4 +13,4 @@ docker-compose up
 ```
 
 ### Ссылка на документацию API:
-[]
+[https://documenter.getpostman.com/view/7641548/TVmMgdL1]
